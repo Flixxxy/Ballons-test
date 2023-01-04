@@ -1,0 +1,31 @@
+.book
+	height: 50rem
+	background: linear-gradient(110deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 57%, rgba(186,133,84,0 ) 57%, rgba(161,79,3,0) 100%), url(../IMG/form-back.jpg) center / cover no-repeat
+	border-radius: .5rem
+	box-shadow: $box-shadow
+	overflow: hidden
+.form
+	padding-left: 5rem
+	width: 50%
+	padding-top: 5rem
+	&__group:not(:last-child)
+		margin-bottom: 5rem
+
+	&__input
+		font-size: 1.6rem
+		letter-spacing: .2rem
+		font-weight: 400
+		color: black
+		background: white
+		padding: 2rem 0 2rem 2rem
+		border: none
+		border-bottom: .2rem solid transparent
+		border-radius: .5rem
+		transition: .3s all
+		width: 55%
+		&:focus
+			outline: none
+			border-bottom: .2rem solid #66D763
+			box-shadow: $box-shadow
+		&:focus:invalid
+			border-bottom: .2rem solid #D76363

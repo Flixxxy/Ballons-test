@@ -88,6 +88,7 @@ body {
 
 /* line 31, F:/Projects/Ballons test/sass/base/_typograpgy.sass */
 .composition__title {
+  text-transform: uppercase;
   text-align: center;
   font-size: 36px;
   line-height: 43px;
@@ -504,6 +505,54 @@ body {
   background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%);
 }
 
+/* line 1, F:/Projects/Ballons test/sass/components/_form.sass */
+.book {
+  height: 50rem;
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 57%, rgba(186, 133, 84, 0) 57%, rgba(161, 79, 3, 0) 100%), url(../IMG/form-back.jpg) center/cover no-repeat;
+  border-radius: .5rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* line 7, F:/Projects/Ballons test/sass/components/_form.sass */
+.form {
+  padding-left: 5rem;
+  width: 50%;
+  padding-top: 5rem;
+}
+
+/* line 11, F:/Projects/Ballons test/sass/components/_form.sass */
+.form__group:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+/* line 14, F:/Projects/Ballons test/sass/components/_form.sass */
+.form__input {
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  font-weight: 400;
+  color: black;
+  background: white;
+  padding: 2rem 0 2rem 2rem;
+  border: none;
+  border-bottom: .2rem solid transparent;
+  border-radius: .5rem;
+  transition: .3s all;
+  width: 55%;
+}
+
+/* line 26, F:/Projects/Ballons test/sass/components/_form.sass */
+.form__input:focus {
+  outline: none;
+  border-bottom: .2rem solid #66D763;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+/* line 30, F:/Projects/Ballons test/sass/components/_form.sass */
+.form__input:focus:invalid {
+  border-bottom: .2rem solid #D76363;
+}
+
 /* line 1, F:/Projects/Ballons test/sass/layouts/_grid.sass */
 .row {
   max-width: 140rem;
@@ -610,6 +659,12 @@ body {
 .section-feedback {
   padding: 8rem 0;
   position: relative;
+}
+
+/* line 11, F:/Projects/Ballons test/sass/pages/_home.sass */
+.section-book {
+  padding: 10rem;
+  background: linear-gradient(90.05deg, #BA8554, #A14F03);
 }
 
 /*# sourceMappingURL=style.css.map */
